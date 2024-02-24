@@ -1,0 +1,9 @@
+type Transfer @entity {
+  id: Bytes!
+  sender: Bytes! # address
+  receiver: Bytes! # address
+  amount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
